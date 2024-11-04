@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+
+*::selection{
+    background-color: #dc3545;
+}
+
+h1{
+    font-family: "Pacifico", cursive;
+    font-size: 60px;
+}
+
+.hero-header{
+    background: url(/Assets/images/HeroHeader.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;    
+}
+
+#main{
+    background-color: rgba(0, 0, 0, 0.719);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+}
+
+#main .container-fluid h3{
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+}
+
+#main #close{
+    color:black;
+    position: absolute;
+    left:72% ;
+    bottom: 80%;
+    background: none;
+    border: none;
+    font-size: 25px;
+
+} 
+
+#About-Us .container-fluid img{
+    width: 250px;
+    height: 250px;
+    gap: 10px;
+}
+
+#Contact{
+    background-image: url(/Assets/images/map.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:1200px){
+    #About-Us .container-fluid img{
+        width: 200px;
+        height: 200px;
+        gap: 50px;
+    }
+    .card-4{
+        display: none;
+    }
+}
+
+@media (max-width:550px) {
+    #main #close{
+        position: absolute;
+        left:90% ;
+        bottom: 75%;
+    
+    }   
+
+    #About-Us .container-fluid img{
+        width: 150px;
+        height: 150px;
+        gap: 10px;
+    }
+    #contact .inform{
+        display: none;
+    }
+} 
